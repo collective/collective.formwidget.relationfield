@@ -6,7 +6,7 @@ version = '1.0'
 setup(name='collective.formwidget.relationfield',
       version=version,
       description="Provides a widget for adding related items using configurable catalog queries",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
