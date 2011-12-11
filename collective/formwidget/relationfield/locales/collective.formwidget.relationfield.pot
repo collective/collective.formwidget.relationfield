@@ -1,0 +1,39 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-12-11 20:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.formwidget.relationfield\n"
+
+#. Default: "Browse for items"
+#: ./related_input.pt:10
+msgid "heading_contenttree_browse"
+msgstr ""
+
+#. Default: "Press Ctrl to select multiple items...."
+#: ./related_input.pt:11
+msgid "heading_contenttree_help"
+msgstr ""
+
+#. Default: "Add"
+#: ./related_input.pt:23
+msgid "label_contenttree_add"
+msgstr ""
+
+#. Default: "Cancel"
+#: ./related_input.pt:23
+msgid "label_contenttree_cancel"
+msgstr ""
+
