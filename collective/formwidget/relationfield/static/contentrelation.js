@@ -57,6 +57,9 @@ jq(function() {
             removeFromDroppable($parent);
             return false
             }
+        if ( $target.is("a.ui-widget-content") ) {
+            return false
+            }
     });
 });
 
