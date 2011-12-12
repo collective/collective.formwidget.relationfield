@@ -16,7 +16,7 @@
         <div class="contenttreeWidget"
             tal:attributes="id string:${view/id}-contenttree">
             <ul class="navTree navTreeLevel0">
-                <li tal:replace="structure view/render_tree" />
+                <li tal:replace="structure python:view.render_tree(relPath=None,query=None,limit=10)" />
             </ul>
         </div>
         <div class="contenttreeWindowActions">
