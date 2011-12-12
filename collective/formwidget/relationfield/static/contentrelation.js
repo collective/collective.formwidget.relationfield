@@ -1,4 +1,65 @@
 // This is based on jQueryFileTree by   Cory S.N. LaViska
+jq(function() {
+    //jq('li.draggable').draggable({containment: ".contenttreeDroppable", snap: true, revert: true});
+    jq('.contenttreeWidget .navTree, #content-droppable').sortable({revert: true});
+    jq('#content-droppable').droppable({
+        //accept: "div.draggable",
+        accept: ".navTree li.draggable",
+        activeClass: "ui-state-hover",
+        hoverClass: "ui-state-active",
+        drop: function(event, ui) {
+            //jq(this).addClass("ui-state-highlight");
+            var $dragged = ui.draggable;
+            copyToDroppable( $dragged );
+        }
+    });
+    function copyToDroppable( $item ) {
+        var $droppable = jq('#content-droppable');
+        var link = $item.find("a").attr("href")
+        var txt = "";
+        txt += link;
+        jq($item).addClass("ui-state-disabled");
+        jq($item).removeClass("draggable");
+        var $newli = jq("<li class='draggable ui-widget-content width-full' />");
+        var $newh3 = jq("<h3 class='ui-widget-header' />");
+        var $newp = jq("<p class='ui-widget-content' />");
+        var $del = jq("<a class='ui-icon ui-icon-trash' href='' />");
+        $newli.attr('id', 'copied-'+$item.attr('id'));
+        $newh3.text($item.find('h3').text());
+        $newh3.appendTo($newli);
+        $newp.text(txt);
+        $newp.appendTo($newli);
+        $del.appendTo($newli);
+        $newli.appendTo($droppable);
+    }
+    function removeFromDroppable( $item ) {
+        var $dropping = jq('#content-droppable');
+        var $listing = jq('.contenttreeWidget .navTree');
+        var $item_id = $item.attr('id');
+        var $listing_id = $item_id.match(/^copied-(.+)$/)[1];
+        jq('#'+$listing_id).removeClass("ui-state-disabled");
+        jq('#'+$listing_id).addClass("draggable");
+        $item.remove();
+    }
+    var $listing = jq('#sortable-container');
+    jq('.contenttreeWidget .navTree li').draggable({
+        //containment: "#sortable-container",
+        //connectToSortable: "#content-droppable",
+        helper: "clone",
+        revert: "invalid"
+    });
+    jq('ul#content-droppable').click(function(event) {
+        var $item = jq(this);
+        var $target = jq(event.target);
+        var $parent = jq($target).parent();
+
+        if ( $target.is("a.ui-icon-trash") ) {
+            removeFromDroppable($parent);
+            return false
+            }
+    });
+});
+
 if(jQuery) (function($){
     
     $.extend($.fn, {

@@ -95,3 +95,11 @@
 .option {
     display: block;
 }
+
+ul#content-droppable { list-style-type: none;}
+.contenttreeDroppable { display: block; margin: 0 1em; overflow-y: auto; position: absolute; left: 0; top: 5em; bottom: 3.5em; height: auto;}
+.contenttreeDroppable, .contenttreeWidget { width: 48%; float: left; left: auto; }
+.contenttreeWidget { left: initial; top: 5em; }
+#content-droppable, #sortable-container { background: #f0fff0; text-align: center;}
+#content-droppable { min-height: 150px; }
+#content-droppable li, #content-droppable span { display: block; }
