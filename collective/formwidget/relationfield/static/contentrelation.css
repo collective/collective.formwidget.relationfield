@@ -102,4 +102,4 @@ ul#content-droppable { list-style-type: none;}
 .contenttreeWidget { left: initial; top: 5em; }
 #content-droppable, #sortable-container { background: #f0fff0; text-align: center;}
 #content-droppable { min-height: 150px; }
-#content-droppable li, #content-droppable span { display: block; }
+#content-droppable li, #content-droppable span { display: block; width: 97.5%; }
