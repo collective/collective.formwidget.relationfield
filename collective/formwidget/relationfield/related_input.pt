@@ -9,10 +9,10 @@
         <div class="contenttreeWindowHeader">
             <h2 i18n:translate="heading_contenttree_browse">Browse for items</h2>
             <em tal:condition="view/multi_select"
-                i18n:translate="heading_contenttree_help">Press Ctrl to select multiple items....
+                i18n:translate="heading_contenttree_help">Select contents from the box on the right, and drop them on the left box add them as related content.
             </em>
         </div>
-        <div class="contenttreeDroppable"><ul id="content-droppable"><span class="ui-widget-header">Droppable</span></ul></div>
+        <div class="contenttreeDroppable"><h3 class="ui-widget-header" i18n:translate="">Newly Related Contents</h3><ul id="content-droppable"></ul></div>
         <div class="contenttreeWidget"
             tal:attributes="id string:${view/id}-contenttree">
             <ul class="navTree navTreeLevel0">
