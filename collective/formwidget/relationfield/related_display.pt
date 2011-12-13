@@ -1,4 +1,4 @@
-<span id="" class=""
+<ul id="" class=""
       tal:attributes="id view/id;
                       class view/klass;
                       style view/style;
@@ -15,11 +15,11 @@
                       onkeydown view/onkeydown;
                       onkeyup view/onkeyup"
         >
-    <div tal:repeat="term view/terms">
+    <li tal:repeat="term view/terms">
         <a tal:define="cntxt python: context.restrictedTraverse(term.token);"
            tal:content="term/title"
            tal:attributes="href cntxt/absolute_url"
            tal:condition="python:not(term.token.startswith('#error-'))"
            />
-    </div>
-</span>
+    </li>
+</ul>
