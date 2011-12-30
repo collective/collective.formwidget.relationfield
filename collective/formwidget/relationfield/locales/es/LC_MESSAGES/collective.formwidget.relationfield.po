@@ -1,18 +1,15 @@
+# Joaquin Rosales <globojorro@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: collective.formwidget.relationfield\n"
 "POT-Creation-Date: 2011-12-12 04:40+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: Joaquin Rosales <globojorro@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2011-12-29 19:47-0600\n"
+"Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
+"Language-Team: Spanish <https://github.com/collective>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
-"Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
+"Domain: collective.formwidget.relationfield\n"
 
 #: ./related_input.pt:15
 msgid "Newly Related Contents"
@@ -21,12 +18,12 @@ msgstr "Nuevo contenido a relacionar"
 #. Default: "Browse for items"
 #: ./related_input.pt:10
 msgid "heading_contenttree_browse"
-msgstr "Buscar"
+msgstr "Examinar elementos"
 
 #. Default: "Select contents from the box on the right, and drop them on the left box add them as related content."
 #: ./related_input.pt:11
 msgid "heading_contenttree_help"
-msgstr "Arrastre el contenido que quiera relacionar al cuadro en la izquierda."
+msgstr "Arrastre elementos desde la caja de la derecha y suéltelos en la caja de la izquierda para agregarlos como contenido relacionado."
 
 #. Default: "Add"
 #: ./related_input.pt:24
