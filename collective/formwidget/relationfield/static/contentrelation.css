@@ -1,7 +1,7 @@
 .contenttreeWidget {
     bottom: 3.5em;
     height: auto;
-    left: 0px;
+    left: initial !important;
     overflow-y: auto;
     margin: 0em 1em;
     position: absolute;
