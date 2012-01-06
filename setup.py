@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from setuptools import setup, find_packages
 import os
 
@@ -28,18 +30,15 @@ setup(name='collective.formwidget.relationfield',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          # -*- Extra requirements: -*-
-          'z3c.formwidget.query',
-          'plone.formwidget.autocomplete >= 1.2.0',
-          'plone.z3cform >= 0.7.4',
+        'setuptools',
+        'z3c.formwidget.query',
+        'plone.formwidget.autocomplete >= 1.2.0',
+        'plone.z3cform >= 0.7.4',
       ],
       extras_require={
         'test': ['plone.app.testing'],
       },
       entry_points="""
-      # -*- Entry points: -*-
-
       [z3c.autoinclude.plugin]
       target = plone
       """,
