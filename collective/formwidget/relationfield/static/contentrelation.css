@@ -101,5 +101,5 @@ ul#content-droppable { list-style-type: none;}
 .contenttreeDroppable, .contenttreeWidget { width: 48%; float: left; left: auto; }
 .contenttreeWidget { left: initial; top: 5em; }
 #content-droppable, #sortable-container { background: #f0fff0; text-align: center;}
-#content-droppable { min-height: 150px; }
+#content-droppable { height: 90%; }
 #content-droppable li, #content-droppable span { display: block; width: 97.5%; }
