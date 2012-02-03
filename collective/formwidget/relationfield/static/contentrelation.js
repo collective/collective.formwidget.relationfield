@@ -79,7 +79,7 @@ if(jQuery) (function($){
             })
         },
         contentTreeAdd: function() {
-            var contenttree_window = (this).parents(".contenttreeWindow");
+            var contenttree_window = $(this).parents(".contenttreeWindow");
             var input_box = $('#'+ contenttree_window[0].id.replace(/-contenttree-window$/,"-widgets-query"));
             contenttree_window.find('.navTreeCurrentItem > a').each(function () {
                 formwidget_autocomplete_new_value(input_box,$(this).attr('href'),$.trim($(this).text()));
