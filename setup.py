@@ -31,6 +31,7 @@ setup(name='collective.formwidget.relationfield',
       zip_safe=False,
       install_requires=[
         'setuptools',
+        'collective.js.jqueryui',
         'z3c.formwidget.query',
         'plone.formwidget.autocomplete >= 1.2.0',
         'plone.z3cform >= 0.7.4',
